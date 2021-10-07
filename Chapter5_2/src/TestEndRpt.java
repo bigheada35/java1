@@ -5,7 +5,7 @@ public class TestEndRpt {
 		// TODO Auto-generated method stub
 		
 		{
-			System.out.println("---문제2---");
+			System.out.println(" ---문제2---");
 			
 			/*
 			 *  swithc 문에서 아래의 프로그래밍을 짜시오.
