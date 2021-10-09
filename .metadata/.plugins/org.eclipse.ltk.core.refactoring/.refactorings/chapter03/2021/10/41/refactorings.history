@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Move element &apos;EscapeSequences.java&apos; to &apos;Chap3/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;chapter03&apos;&#x0D;&#x0A;- Destination element: &apos;Chap3/src/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;chapter03.EscapeSequences.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=Chap3/src&lt;" element1="/src&lt;chapter03{EscapeSequences.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1633796035458" units="1" version="1.0"/>
-</session>
