@@ -1,4 +1,5 @@
 
+
 public class TodayTest2 {
 
 	public static void main(String[] args) {
@@ -13,10 +14,16 @@ public class TodayTest2 {
 				  *****
 				 *******
 				*********
+				 ******* 
+				  *****  
+				   ***   
+				    *  
 			 */
-			for(int i=0; i<5; i++) {
+			//for(int i=0; i<5; i++) {
+			for(int i=0; i<10; i++) {
 				for(int j=0; j<9; j++) {
-					if((j>= 4-i) && (j <= 4+i) ) {
+					//if((j>= 4-i) && (j <= 4+i) ) {
+					if((j>= ((i<=4)?(4-i):(i-4)) ) && (j <= ((i<=4)?(4+i):(12-i)) ) ) {
 						System.out.print("*");
 					}else {
 						System.out.print(" ");
@@ -25,8 +32,16 @@ public class TodayTest2 {
 				System.out.println();
 			}			
 		}
+		
 		{
 			System.out.println("--그냥해보기2--");	
+			/**
+			 *      *
+				   **
+				  ***
+				 ****
+				*****
+			 */
 			for(int i = 1; i <= 5; i++) {
 				for(int j = 4; j >= i; j--) {
 					System.out.print(" ");
