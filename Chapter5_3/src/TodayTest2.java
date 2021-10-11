@@ -5,7 +5,7 @@ public class TodayTest2 {
 	public static void main(String[] args) {
 		
 		{
-			System.out.println("--그냥해보기--");	
+			System.out.println("--그냥해보기1--");	
 			/*
 			 * 그냥해보기.아래의 별을 찍으시오.
 	
@@ -20,6 +20,8 @@ public class TodayTest2 {
 				    *  
 			 */
 			//for(int i=0; i<5; i++) {
+			
+			
 			for(int i=0; i<10; i++) {
 				for(int j=0; j<9; j++) {
 					//if((j>= 4-i) && (j <= 4+i) ) {
@@ -30,7 +32,9 @@ public class TodayTest2 {
 					}
 				}
 				System.out.println();
-			}			
+			}
+			
+			
 		}
 		
 		{
