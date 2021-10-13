@@ -1,4 +1,4 @@
-class A2{
+class A{
 	int num=5;
 	public void printNum() {
 		System.out.println(num);
@@ -8,14 +8,9 @@ class A2{
 	}
 }
 
-class Circle2{
+class Circle{
 	int radius;
-//	public Circle(int r){
-//		radius = 1;
-//	}
-//	public double getArea(){
-//		return radius*radius*3.14;
-//	}
+
 	
 	public void setRadius(int r) {
 		radius = r;
@@ -29,14 +24,12 @@ class Circle2{
 }
 
 
-public class AInstanceTest {
+public class InstanceTest2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		
-//		Circle cir = new Circle(1);
-//		double ca = cir.getArea();
-//		System.out.println("ca : "+ ca);
+
 		System.out.println("--test--");
 		System.out.println("----t1---");	
 		Circle circle = new Circle();
@@ -50,9 +43,9 @@ public class AInstanceTest {
 		double area = circle.getArea();
 		System.out.println("area : " + area);
 		System.out.println("----t2---");
-		A2 a = new A2();
+		A a = new A();
 		double  area2 = a.Area();
-		System.out.println("arda:" + area2);
+		System.out.println("arda:" + area);
 		
 	}
 
