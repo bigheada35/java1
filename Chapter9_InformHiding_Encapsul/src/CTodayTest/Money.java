@@ -27,10 +27,10 @@ class Money {
 		System.out.println("천원"+ rem/1_000 +"장");
 		rem = rem % 1_000;
 		
-		System.out.println("오백원"+ rem/500 +"장");
+		System.out.println("오백원"+ rem/500 +"개");
 		rem = rem % 500;
 		
-		System.out.println("오백원"+ rem/100 +"장");
+		System.out.println("백원"+ rem/100 +"개");
 		rem = rem % 100;		
 	}
 	
