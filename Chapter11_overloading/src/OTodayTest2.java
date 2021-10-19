@@ -2,6 +2,12 @@ import java.util.Scanner;
 
 //import java.util.Scanner;
 
+/*
+ * 
+ 9. 사용자에게 받은 문자열을 역순으로 화면에 출력하는 프로그램을 작성하시오.
+ * 
+ */
+
 public class OTodayTest2 {
 
 	public static void main(String[] args) {

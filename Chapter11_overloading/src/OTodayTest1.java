@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class OTodayTest1 {
 
+	/*
+	 8. 사용자로부터 받은 문자열(영문으로)에서
+	  자음과 모음 개수를 계산하는 프로그램을 작성
+	 */
+	
 	public static void main(String[] args) {
 		
 		System.out.println("영어 4글짜를 를 입력하세요");
