@@ -16,6 +16,15 @@ class Array2{
 	Array2() {
 		for(int i=0; i<ia.length; i++) {
 			ia[i] = gen();
+			//
+			//중복처리
+			//
+			for(int j=0; j<i; j++) {
+				if(ia[j] == ia[i]) {
+					i--;
+					//break;
+				}
+			}
 		}
 	}
 	int gen() {
@@ -31,6 +40,7 @@ class Array2{
 	}
 	void showMx() {
 		int large = 0;
+		/*
 		for(int e : ia) {
 				if(large < e) {
 					large = e;
@@ -42,6 +52,19 @@ class Array2{
 				}
 				
 		}
+		*/
+		for(int i=0; i<ia.length; i++) {
+			if(large < ia[i]) {
+				large = ia[i];
+			} 
+			for(int j=0; j<ia.length; j++) {
+				if(large < ia[j]) {
+					large = ia[j];
+				}
+			}
+			
+		}
+		
 		System.out.println("max:"+ large);
 	}
 }
