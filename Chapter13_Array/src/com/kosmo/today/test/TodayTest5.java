@@ -17,25 +17,4 @@ public class TodayTest5 {
 	}
 }
 
-class Box{
-	private int num;
-	private String name;
-	
-	Box(int num, String name){
-		this.num = num;
-		this.name = name;
-	}
-	//
-	// 주의 : println()에서 사용할려면 public 달아야 함
-	//
-	public String toString(){
-		return name;
-	}
-	int getBoxNum() {
-		return num;
-	}
-}
-
-
-
 
