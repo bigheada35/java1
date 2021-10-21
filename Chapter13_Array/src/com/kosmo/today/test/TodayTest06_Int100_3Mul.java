@@ -1,6 +1,9 @@
+/*
+ 양의 정수 100개를 랜덤 생성하여, 배열에 저장하고, 배열에 있는 정수 중에서 3의 배수만 출력해 보자.
+ */
 package com.kosmo.today.test;
 
-public class TodayTest6 {
+public class TodayTest06_Int100_3Mul {
 
 	public static void main(String[] args) {
 		Array ar = new Array();

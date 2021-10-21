@@ -1,6 +1,10 @@
+/*
+ - 5개의 숫자를 랜덤 으로 받아 배열로 저장
+- 5개의 숫자 중 가장 큰 값을 출력
+ */
 package com.kosmo.today.test;
 
-public class TodayTest7 {
+public class TodayTest07_GetMax {
 
 	public static void main(String[] args) {
 		Array2 ar = new Array2();

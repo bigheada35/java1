@@ -1,7 +1,20 @@
+/*
+ Rectangle 을 배열로 3개 선언
+
+해당 객체에 인덱스 순서대로 가로 세로 설정 - 
+이번에는 반드시 scanner 로 입력 받을것
+
+해당 배열에 있는 Rectangle 의 총넓이의 합을 구하시오.
+
+또한 아래의 함수도 만들것(static 으로 만들것)
+- 파라미터를 Rectangle 배열로 받아서 해당 배열에 들어 잇는 
+Rectangle 들에 총 넓이를 리턴 하는 함수를 만드시오.
+ */
+
 package com.kosmo.today.test;
 import java.util.Scanner;
 
-public class TodayTest10_StaticMethod {
+public class TodayTest10_Rect3_StaticMethod {
 
 	public static void main(String[] args) {
 		Rect[] ra = new Rect[3];
@@ -11,7 +24,7 @@ public class TodayTest10_StaticMethod {
 		//??지역변수는 , 초기화 0 자동 , 않되나?
 		//
 		int tarea = 0;
-		for(int i=0; i<3; i++) {
+		for(int i=0; i<ra.length; i++) {
 			System.out.println("가로:");
 			int w = sc.nextInt();
 			System.out.println("세로:");

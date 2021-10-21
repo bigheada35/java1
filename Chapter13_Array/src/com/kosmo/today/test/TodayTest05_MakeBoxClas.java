@@ -1,6 +1,6 @@
 package com.kosmo.today.test;
 
-public class TodayTest5 {
+public class TodayTest05_MakeBoxClas {
 
 	public static void main(String[] args) {
 		Box[] ar = new Box[5];

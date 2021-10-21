@@ -7,9 +7,9 @@ public class AArray6_stringDiv {
 		Scanner sc = new Scanner(System.in);
 		
 		for(int i=0; i<2; i++) {
-			System.out.println("입력:");
+			System.out.print("입력: ");
 			String str = sc.next();
-			System.out.println(str);
+			//System.out.println(str);
 	
 			
 			FileName fn = new FileName(str);
@@ -39,7 +39,7 @@ class FileName{
 			}
 		}
 		if(find)
-			System.out.println("파일이름은:" + fname + "이며 확장자는 " + fext + "입니다.");
+			System.out.println("출력: 파일이름은:" + fname + "이며 확장자는 " + fext + "입니다.");
 		else
 			System.out.println(".이 없습니다.");
 	}

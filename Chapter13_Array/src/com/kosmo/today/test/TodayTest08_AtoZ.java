@@ -1,6 +1,10 @@
+/*
+ char 배열을 생성하여, 알파벳 A~Z까지 대입 후, 출력
+ */
+
 package com.kosmo.today.test;
 
-public class TodayTest8 {
+public class TodayTest08_AtoZ {
 
 	public static void main(String[] args) {
 		char[] ca = new char[26];

@@ -22,6 +22,8 @@ public class AArray7_Money {
 
 	public static void main(String[] args) {
 		AutoMoney am = new AutoMoney();
+		System.out.println();
+		System.out.println("출력");
 		am.show();
 	}
 }
@@ -38,7 +40,7 @@ class AutoMoney{
 		this.divMon[2] = 50;
 		this.divMon[3] = 10;
 		this.money = gen();
-		System.out.println(this.money);
+		System.out.println(this.money +"원");
 	}
 	private int gen() {
 		double r = java.lang.Math.random();
@@ -49,7 +51,7 @@ class AutoMoney{
 		rem[0] = money;
 		
 		for(int i=0; i<4; i++) {
-			System.out.println( divMon[i]+ "원" + rem[i]/divMon[i] +"개");
+			System.out.println( divMon[i]+ "원 : " + rem[i]/divMon[i] +"개");
 			rem[i+1] = rem[i] % divMon[i];
 		}
 		
