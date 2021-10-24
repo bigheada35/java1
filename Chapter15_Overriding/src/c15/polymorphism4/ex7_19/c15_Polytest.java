@@ -1,5 +1,5 @@
 
-package c15.polymorphism4.ex7_9;
+package c15.polymorphism4.ex7_19;
 
 /*
  [7-19] 다음은 물건을 구입하는 사람을 정의한 클래스이다 이 클래스는 멤버변수 Buyer .
@@ -18,9 +18,7 @@ public class c15_Polytest {
 
 	public static void main(String args[]) {
 		Buyer b = new Buyer();
-		System.out.println("-1-");
 		b.buy(new Tv());
-		System.out.println("-1-");
 		b.buy(new Computer());
 		b.buy(new Tv());
 		b.buy(new Audio());
@@ -67,15 +65,18 @@ class Buyer{
 		1.1.3 . 새로운 장바구니와 기존의 장바구니를 바꾼다
 		1.2 (cart) . i 1 . 물건을 장바구니 에 저장한다 그리고 의 값을 증가시킨다
 		*/
-		//System.out.println("-3-");
 		if(i >= cart.length) {
-			Product[] cart2 = new Product[6];
+			
+			//Product[] cart2 = new Product[6];
+			// 만일 장바구니에 담을 공간이 없으면 장바구니의 크기를 배로 늘린 다음에 담는다
+			// 주의 :  수정 :  2배
+			Product[] cart2 = new Product[cart.length * 2];
+			
 			for(int j=0; j<cart.length; j++) {
 				cart2[j] = cart[j];
 			}
 			cart = cart2;
 		}
-		//System.out.println("--2--");
 		cart[i++] = p;
 
 	} // add(Product p)

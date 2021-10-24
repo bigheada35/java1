@@ -3,13 +3,17 @@ package A1.test;
 public class smartphone_polymorphism {
 
 	public static void main(String[] args) {
-		
+			/*----------*/System.out.println("=====phone====");
 		   SmartPhone phone = 
 			          new SmartPhone("010-555-777", "Nougat");
+		   /*----------*/System.out.println("--phone--:" + phone + ", "+ System.identityHashCode(phone));
 			phone.answer();   // 전화를 받는다.
 			phone.playApp();   // 앱을 선택하고 실행한다.
-			   
+			
+			
+			/*----------*/System.out.println("=====ph2====");   
 		   MobilePhone  ph2 = new SmartPhone("010-555-777", "Nougat");
+		   /*----------*/System.out.println("--ph2--:" + ph2 + ", "+ System.identityHashCode(ph2));
 		   ph2.answer();
 		   //ph2.playApp();
 	}
@@ -21,6 +25,7 @@ class MobilePhone {
 	   
 	   public MobilePhone(String num) {
 	      number = num;
+	      System.out.println("--11number--:" + System.identityHashCode(number));
 	   }
 	   public void answer() {
 	      System.out.println("Hi~ from " + number);
@@ -34,6 +39,7 @@ class SmartPhone extends MobilePhone {
 	   public SmartPhone(String num, String ver) {
 	      super(num);
 	      androidVer = ver;
+	      System.out.println("--22androidVer--:" + System.identityHashCode(androidVer));
 	   }
 	   public void playApp() {
 	      System.out.println("App is running in " + androidVer);
@@ -43,6 +49,6 @@ class SmartPhone extends MobilePhone {
 	   //
 	   @Override
 	   public void answer() {
-		      System.out.println("11111 " + number);
+		      System.out.println("11111@Override@Override@Override " + number);
 		   }
 	}

@@ -34,9 +34,14 @@ public class c15_p18 {
 		PaperBox box2 = new PaperBox();
 		GoldPaperBox box3 = new GoldPaperBox();
 
+		System.out.println("-1-");
 		wrapBox(box1);
 		wrapBox(box2);
 		wrapBox(box3);
+		System.out.println("-2-");
+		
+		Box box11 = new PaperBox();
+		wrapBox(box11);
 	}
 
 	public static void wrapBox(Box box) {
