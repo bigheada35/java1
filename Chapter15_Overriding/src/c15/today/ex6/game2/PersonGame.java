@@ -26,14 +26,15 @@ public class PersonGame {
 		String str;
 		
 		for(int i=0; i<person.length; i++) {
-			person[i] = new Person();
+			//person[i] = new Person();
 			System.out.print((i+1) + "번째 선수 이름>>");
 			str = sc.next();
-			person[i].setName(str);
+			//person[i].setName(str);
+			person[i] = new Person(str);
 		}
 		
 		// 주의 : ??왜 사용, 위에서 입력받은 스트링이 , 스트링 + \n 나눠서 , 2번 전달 되는건가?
-		sc.nextLine();
+		sc.nextLine();// 주의 설명 :  위의 next() 을 사용한 뒤에, 버퍼에 '\n'등이 남아 있다. 이것을 없애기 위해서 사용
 		
 		int i = 0;
 		while(true) {
@@ -60,13 +61,14 @@ class Person{
 	private String name;
 	private int[] nary = new int[3]; 
 	
-//	Person(String name){
+	Person(String name){
+		this.name = name;
+	}
+	
+//	void setName(String name) {
 //		this.name = name;
 //	}
 	
-	void setName(String name) {
-		this.name = name;
-	}
 	String getName() {
 		return this.name;
 	}

@@ -1,5 +1,7 @@
 package com.kosmo.today.test;
-
+//
+// 주의 : println()에서 사용할려면 public 달아야 함
+//
 public class Box{
 	private int num;
 	private String name;

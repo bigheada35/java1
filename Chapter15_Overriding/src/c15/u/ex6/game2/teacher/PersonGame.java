@@ -1,4 +1,4 @@
-package c15.today.ex6.game;
+package c15.u.ex6.game2.teacher;
 
 import java.util.Scanner;
 
@@ -21,41 +21,34 @@ public class PersonGame {
 
 	public static void main(String[] args) {
 
-		Person[] arr = new Person[2];
-		arr[0] = new Person();
-		arr[1] = new Person();
+		Person[] person = new Person[2];
 		Scanner sc = new Scanner(System.in);
-		System.out.print("1번째 선수 이름>>");
-
-		//arr[0].setName(sc.next());
-		String str = sc.next();
-		arr[0].setName(str);
+		String str;
 		
-		System.out.print("2번째 선수 이름>>");
-		arr[1].setName(sc.next());
+		for(int i=0; i<person.length; i++) {
+			
+			System.out.print((i+1) + "번째 선수 이름>>");
+			str = sc.next();
+			person[i] = new Person(str);
+		}
 		
-		// 주의 : ?? 위에서 입력받은 스트링이 , 스트링 + \n 나눠서 , 2번 전달 되는건가?
+		// 주의 : ??왜 사용, 위에서 입력받은 스트링이 , 스트링 + \n 나눠서 , 2번 전달 되는건가?
+		
 		sc.nextLine();// 주의 설명 :  위의 next() 을 사용한 뒤에, 버퍼에 '\n'등이 남아 있다. 이것을 없애기 위해서 사용
 		
 		int i = 0;
 		while(true) {
-			System.out.print("[" + arr[i].getName() + "]:");
-
-			// 주의 :  어떻게 기달렸다가 돌릴수 있을까?,  Enter키 만을 입력하면 넘어가게 할려면? 
-			//sc.next();
-			//sc.nextInt();
-			String strEnter = sc.nextLine();
-			if(strEnter.equals("")) {
-				//System.out.println("--2-");
-			}
-
-			if(	arr[i].game()) {
-				System.out.println(arr[i].getName() + "님이 이겼습니다!");
-				break;
-			}else {
-				System.out.println("  아쉽군요!");
-			}
+			System.out.print("[" + person[i].getName() + "]:");
 			
+			// 주의 :  어떻게 기달렸다가 돌릴수 있을까?,  Enter키 만을 입력하면 넘어가게 할려면? 
+			str=sc.nextLine();
+			if(!str.equals(""))
+				continue;
+				
+			if(person[i].startGame()) {
+				sc.close();
+				break;
+			}
 			i = i  ^ 1;
 		}
 
@@ -66,35 +59,44 @@ public class PersonGame {
 
 class Person{
 	private String name;
-	private int[] nary = new int[3]; 
-//	Person(String name){
-//		this.name = name;
-//	}
 	
-	void setName(String name) {
+	//private int[] nary = new int[3]; 
+	private int num1;
+	private int num2;
+	private int num3;
+	
+	Person(String name){
 		this.name = name;
 	}
+	
 	String getName() {
 		return this.name;
 	}
 	
 	boolean game() {
-		int cnt = 0;
+
 		boolean win = false;
-		for(int i=0; i<nary.length ; i++) {
-			nary[i] = (int)(Math.random()*3 + 1);
-			System.out.print(nary[i] + " ");
-		}
-		//System.out.println();
 		
-		for(int i=0; i<nary.length-1 ; i++) {
-			if(nary[i] == nary[i+1]) {
-				cnt++;
-			}
-		}
-		if(cnt == nary.length-1)
+		num1 = (int)(Math.random()*3 + 1);
+		num2 = (int)(Math.random()*3 + 1);
+		num3 = (int)(Math.random()*3 + 1);
+		
+		System.out.println(num1 +" " + num2 + " " + num3);
+		
+		if(num1 == num2 && num2 == num3)
 			win = true;
-		
 		return win;
+	}
+	
+	boolean startGame() {
+		
+		if(	game()) {
+			System.out.println(getName() + "님이 이겼습니다!");
+			return true;
+		}else {
+			System.out.println("  아쉽군요!");
+			return false;
+		}
+
 	}
 }
