@@ -34,6 +34,7 @@ interface Printable { // MS가 정의하고 제공한 인터페이스
 
 class SPrinterDriver implements Printable{
 	// 주의 : public 붙이기
+	// 주의 : 이것도 Override에 해당함
 	@Override
 	public void print(String doc){
 		System.out.println("From Samsung printer");
@@ -43,6 +44,7 @@ class SPrinterDriver implements Printable{
 
 class LPrinterDriver implements Printable{
 	// 주의 : public 붙이기
+	// 주의 : 이것도 Override에 해당함
 	@Override
 	public void print(String doc){
 		System.out.println("From LG printer");
