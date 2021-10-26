@@ -42,8 +42,8 @@ class UnivFriend {     // 대학 동창
 	      phone = ph;
 	   }
 	   public void showInfo() {
-	      System.out.println("이름: " + name);
-	      System.out.println("전공: " + major);
+	      //System.out.println("이름: " + name);
+	      //System.out.println("전공: " + major);
 	      System.out.println("전화: " + phone);
 	   }
 	}
@@ -59,6 +59,7 @@ class CompFriend {     // 직장 동료
 	      phone = ph;
 	   }
 	   public void showInfo() {
+		   
 	      System.out.println("이름: " + name);
 	      System.out.println("부서: " + department);
 	      System.out.println("전화: " + phone);

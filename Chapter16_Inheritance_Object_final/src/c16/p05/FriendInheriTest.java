@@ -45,6 +45,7 @@ class UnivFriend extends Friend {
 	      major = ma;
 	   }
 	   public void showInfo() {
+		   // 주의 :  상속 받았으니깐 부모것 showInfo 사용하자
 	      super.showInfo();
 	      System.out.println("전공: " + major);
 	   }
@@ -58,6 +59,7 @@ class CompFriend extends Friend {
 	      department = de;
 	   }
 	   public void showInfo() {
+		  // 주의 :  상속 받았으니깐 부모것 showInfo 사용하자
 	      super.showInfo();
 	      System.out.println("부서: " + department);
 	   }
