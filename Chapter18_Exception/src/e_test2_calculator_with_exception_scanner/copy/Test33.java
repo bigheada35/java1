@@ -34,7 +34,7 @@ n
 종료입니다.
 */
 
-
+ 
 public class Test33 {
 
 	public static void main(String[] args) {
