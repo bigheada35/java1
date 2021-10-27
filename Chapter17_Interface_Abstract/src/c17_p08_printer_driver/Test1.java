@@ -1,4 +1,4 @@
-package c17_p8_printer_driver;
+package c17_p08_printer_driver;
 
 interface Printable { // MS가 정의하고 제공한 인터페이스
 

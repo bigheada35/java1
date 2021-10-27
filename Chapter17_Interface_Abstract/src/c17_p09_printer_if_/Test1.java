@@ -1,4 +1,4 @@
-package c17_p9_printer_if_;
+package c17_p09_printer_if_;
 
 interface Printable { // MS가 정의하고 제공한 인터페이스
 
@@ -16,7 +16,7 @@ interface Printable { // MS가 정의하고 제공한 인터페이스
 }
 //
 // 주의 : 인터페이스가 바뀌어야 할때 방법, --> 인터페이스의 상속
-//
+// 주의 : 인터페이스간 상속도 extends로 표현
 interface ColorPrintable extends Printable {
 	   void printCMYK(String doc);
 	}
@@ -93,6 +93,13 @@ public class Test1 {
 		// LG 프린터로 출력
 		prn = new LPrinterDriver();
 		prn.print(myDoc);
+		
+		//test
+		System.out.println("--");
+		//신규 컬러 프린터, Prn909Drv
+		ColorPrintable prn2 = new Prn909Drv();
+		prn2.print(myDoc);
+		prn2.printCMYK(myDoc);
 	}
 
 }

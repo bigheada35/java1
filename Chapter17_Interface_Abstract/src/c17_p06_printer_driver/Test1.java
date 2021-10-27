@@ -1,4 +1,4 @@
-package c17_p6_printer_driver;
+package c17_p06_printer_driver;
 
 
 interface Printable { // MS가 정의하고 제공한 인터페이스
