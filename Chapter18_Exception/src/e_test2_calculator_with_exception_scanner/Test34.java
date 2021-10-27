@@ -1,7 +1,7 @@
 package e_test2_calculator_with_exception_scanner;
 
 /*
- getAllArea ê³¼ getArea í•¨ìˆ˜ë¥¼ ì™„ì„±í•˜ì‹œì˜¤.
+ getAllArea °ú getArea ÇÔ¼ö¸¦ ¿Ï¼ºÇÏ½Ã¿À.
 ================================
  */
 public class Test34 {
