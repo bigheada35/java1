@@ -1,6 +1,6 @@
 package c18_p17_class_cast_exception;
 
-public class Test22 {
+public class Test17 {
 	//class Board { }//	A 에러 초래:
 	//class PBoard extends Board { }//	A 에러 초래:
 	public static void main(String[] args) {
@@ -12,6 +12,7 @@ public class Test22 {
 
 	      System.out.println(".. intermediate location .. ");
 	      Board ebd1 = new Board();
+	      // 주의 : 이것은 컴파일 에러는 안나오고, 실시간 exception이 으로 나온다.
 	      PBoard ebd2 = (PBoard)ebd1;   // Exception!
 	}
 }
