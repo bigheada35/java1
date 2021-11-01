@@ -8,8 +8,8 @@ public class ex2Prog {
 //		System.out.println("----");
 //		for(i=20;i>0;i--) {
 //			for(int j=0;j<i;j++) {
-//				System.out.printf("%c", '¡Ù');
-//				//System.out.printf("%c", '¨Ö');
+//				System.out.printf("%c", 'ï¿½ï¿½');
+//				//System.out.printf("%c", 'ï¿½ï¿½');
 //			}
 //			System.out.println("");
 //		}
@@ -21,40 +21,40 @@ public class ex2Prog {
 		
 		for(int j=0;j<10;j++) {
 			for(int i=0;i<10;i++) {
-				//Å×µÎ¸®enter
+				//ï¿½×µÎ¸ï¿½enter
 				if(i==0 && j==0) {
-					System.out.printf("%C", '¦£');
+					//System.out.printf("%C", 'ï¿½ï¿½');
 					for(int top=0;top<10;top++)
-						System.out.printf("%C", '¦¸');
-					System.out.printf("%C", '¦¤');
+						System.out.printf("%C", 'A');
+					System.out.printf("%C", 'B');
 					System.out.println();
 				}
 				if(i==0) {
-					System.out.printf("%C", '¦§');
-					//System.out.printf("%C", '¦¢');
-					//System.out.printf("%C", '¡Û');
+					System.out.printf("%C", 'D');
+					//System.out.printf("%C", 'ï¿½ï¿½');
+					//System.out.printf("%C", 'ï¿½ï¿½');
 				}
-				//Å×µÎ¸®leave
+				//ï¿½×µÎ¸ï¿½leave
 				
 				if(i==x && j==y)
-					System.out.printf("%C", '¡Ü');
+					System.out.printf("%C", 'E');
 				else
-					System.out.printf("%C", '¦«');
+					System.out.printf("%C", 'F');
 				
-				//Å×µÎ¸®enter
+				//ï¿½×µÎ¸ï¿½enter
 				if(i==9) {
-					System.out.printf("%C", '¦©');	
-					//System.out.printf("%C", '¦¢');
-					//System.out.printf("%C", '¡Û');
+					System.out.printf("%C", 'G');	
+					//System.out.printf("%C", 'ï¿½ï¿½');
+					//System.out.printf("%C", 'ï¿½ï¿½');
 				}
 				if(i==9 && j==9) {
 					System.out.println();
-					System.out.printf("%C", '¦¦');
+					System.out.printf("%C", 'H');
 					for(int bot=0;bot<10;bot++)
-						System.out.printf("%C", '¦ª');
-					System.out.printf("%C", '¦¥');
+						System.out.printf("%C", 'I');
+					System.out.printf("%C", 'J');
 				}
-				//Å×µÎ¸®leave
+				//ï¿½×µÎ¸ï¿½leave
 				
 			}
 			System.out.println();

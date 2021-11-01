@@ -1,5 +1,7 @@
-package ch19_p11;
+package ch19_p11_finalize;
+//
 //finalize 메소드의 오버라이딩 예
+//
 public class Test11 {
 
 	public static void main(String[] args) {
