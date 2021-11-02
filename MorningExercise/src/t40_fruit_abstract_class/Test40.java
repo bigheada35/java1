@@ -1,4 +1,4 @@
-package t040_fruit_abstract_class;
+package t40_fruit_abstract_class;
 /*
  7.과일, 사과, 배, 포도를 표현한 클래스를 만들고 이들 간의 
 관계를 고려하여 하나의 클래스를 추상 클래스로 만들어 

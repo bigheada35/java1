@@ -10,14 +10,24 @@ public class Prog {
 		   System.out.println();
 		   
 		   //둘 이상의 구분자! 공백도 구분자에 포함!
-		   StringTokenizer st2 = new StringTokenizer("12 + 36 - 8 / 2 = 44", "+-/= ");
+		   StringTokenizer st2 = new StringTokenizer("12 + 36 - 8 / 2 = 44", "+-/= ");//주의 : 공백도 있음
 
 		   while(st2.hasMoreTokens())
 		      System.out.print(st2.nextToken() + ' ');
 		   System.out.println();
+		   
+		   System.out.println("---");
+		   StringTokenizer st3 = new StringTokenizer("12 + 36 - 8 / 2 = 44", "+-/=");//주의 : 공백도 있음
+
+		   while(st3.hasMoreTokens())
+		      System.out.print(st3.nextToken() + ' ');
+		   System.out.println();
+		   
 /*
- 	PM 08 45 
-	12 36 8 2 44 
+PM 08 45 
+12 36 8 2 44 
+12   36   8   2   44 
+
  */
 	   
 	}

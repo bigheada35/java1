@@ -1,4 +1,4 @@
-package ch20_p25;
+package ch20_p25_arraycopy;
 import java.util.Arrays;//<-- ***
 //arraycopy 메소드 호출의 예
 public class Prog {

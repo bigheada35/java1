@@ -1,4 +1,4 @@
-package ch20_p24;
+package ch20_p24_copyOf;
 import java.util.Arrays;//<-- ***
 
 //copyOf 메소드 호출의 예
@@ -13,6 +13,9 @@ public class Prog {
 		   // 세번째 요소까지만 복사
 		   double[] arCpy2 = Arrays.copyOf(arOrg, 3);
 
+		   	//배열을 한꺼번에 뿌려준다.
+		   System.out.println("-- " + Arrays.toString(arCpy1));
+		   
 		   for(double d : arCpy1)
 		      System.out.print(d + "\t");
 		   System.out.println();

@@ -10,6 +10,8 @@ public class Prog {
 		   							// 	Random(long seed) 생성자 호출 
 		   							//	this(System.currentTimeMillis()); 
 									//}
+		System.out.println(System.currentTimeMillis());
+		
 		   for(int i = 0; i < 7; i++)
 		      System.out.println(rand.nextInt(1000));
 		   

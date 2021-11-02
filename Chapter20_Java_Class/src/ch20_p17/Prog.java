@@ -15,7 +15,8 @@ public class Prog {
 		   System.out.println("탄젠트 45: " + Math.tan(radian45));
 		   System.out.println();
 		   System.out.println("로그 25: " + Math.log(25));
-		   System.out.println("2의 16승: "+ Math.pow(2, 16));
+		   //System.out.println("2의 16승: "+ Math.pow(2, 16));
+		   System.out.println("2의 2승: "+ Math.pow(2, 2));
 /*
 	원주율: 3.141592653589793
 	2의 제곱근: 1.4142135623730951

@@ -8,8 +8,13 @@ public class Prog {
 		int[] ar2 = Arrays.copyOf(ar1, ar1.length);
 		System.out.println(Arrays.equals(ar1, ar2));
 
+		int[] ar3 = Arrays.copyOf(ar1, ar1.length-1);
+		System.out.println("---" + Arrays.equals(ar1, ar3));
+
+		
 		/*
-		true
+true
+---false
 		*/
 	   
 	}
