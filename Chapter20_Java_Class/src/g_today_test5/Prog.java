@@ -6,10 +6,11 @@ public class Prog {
 				new Rectangle(11, 11) };
 
 		// RecArrays.sort(recArr);
-		for (Rectangle rectangle : recArr) {
-			System.out.println(rectangle);
-		}
-		System.out.println();
+//		for (Rectangle rectangle : recArr) {
+//			System.out.println(rectangle);
+//		}
+//		System.out.println();
+		System.out.println(Arrays.toString(recArr));
 
 		Arrays.sort(recArr);
 
@@ -17,10 +18,10 @@ public class Prog {
 			System.out.println(rectangle);
 		}
 		System.out.println();
-
 		for (Rectangle rec : recArr) {
 			System.out.println(rec.getArea());
 		}
+		System.out.println(Arrays.toString(recArr));
 	}
 }
 
@@ -36,7 +37,9 @@ class Rectangle implements Comparable{
 	@Override
 	public int compareTo(Object obj) {
 		Rectangle rec = (Rectangle)obj;
-		return (this.w - rec.w);
+		//return (this.w - rec.w);
+		//return (this.getArea() - rec.getArea());
+		return (rec.getArea() - this.getArea());
 	}
 	@Override
 	public String toString() {

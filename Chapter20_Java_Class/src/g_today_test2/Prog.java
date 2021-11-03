@@ -7,14 +7,20 @@ public class Prog {
 		ar[1] = new Person("Goo", 15);
 		ar[2] = new Person("Soo", 37);
 
-		for (Person person : ar) {
-			System.out.println(person);
-		}
+//		for (Person person : ar) {
+//			System.out.println(person);
+//		}
+		System.out.println(Arrays.toString(ar));
+		
 		System.out.println();
 		Arrays.sort(ar);
-		for (Person person : ar) {
-			System.out.println(person);
-		}		
+		
+//		for (Person person : ar) {
+//			System.out.println(person);
+//		}
+		// 주의 : Arrays.toString(ar) 사용하기
+		System.out.println(Arrays.toString(ar));
+		
 	}
 }
 class Person implements Comparable{
@@ -31,18 +37,24 @@ class Person implements Comparable{
 	}
 	@Override
 	public String toString() {
-		return (this.name + "," + this.age); 
+		//return (this.name + "," + this.age); 
+		return (this.name + ":" + this.age);
 	}
 }
 /*
 결과: 
-	Lee,29
-	Goo,15
-	Soo,37
-	
-	Goo,15
-	Lee,29
-	Soo,37
+//	Lee,29
+//	Goo,15
+//	Soo,37
+//	
+//	Goo,15
+//	Lee,29
+//	Soo,37
+
+[Lee:29, Goo:15, Soo:37]
+
+[Goo:15, Lee:29, Soo:37]
+
  */
 
 /*

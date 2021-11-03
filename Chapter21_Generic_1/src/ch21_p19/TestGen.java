@@ -26,7 +26,7 @@ class Apple implements Eatable {
 }
 //제네릭 클래스의 타입 인자를 인터페이스로 제한하기
 
-class Box<T extends Eatable> {
+class Box<T extends Eatable> {		//주의: extends임, implemets가 아니라.
 	T ob;
 
 	public void set(T o) {
