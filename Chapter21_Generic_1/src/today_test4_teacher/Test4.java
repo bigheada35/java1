@@ -1,4 +1,4 @@
-package g_today_test4_teacher;
+package today_test4_teacher;
 /*
 
  */

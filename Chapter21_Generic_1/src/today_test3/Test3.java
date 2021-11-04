@@ -22,7 +22,6 @@ class DBox<L, R>{
 		//주의 : 제너릭에서는 this.name +  this.pea 리턴은 않됨 에러남.
 		//  에러내용 : The operator + is undefined for the argument type(s) L, R
 		//return (this.name +  this.pea);
-		
 		return (this.name + " & " + this.pea);
 	}
 }

@@ -1,7 +1,34 @@
-package today_test2;
+package today_test2_teacher;
+
+class DBox<T1,T2>{
+	private T1 ob1;
+	private T2 ob2;
+	public void set(T1 ob1, T2 ob2) {
+		this.ob1 = ob1;
+		this.ob2 = ob2;
+	}
+	@Override
+	public String toString() {
+		// 주의 ob1.toString() 사용하기. --> 이게 더 낳다. String 타입도 맞고
+		return (ob1.toString() + " & " + ob2.toString());
+	}
+}
+class DDBox<T1,T2>{
+	private T1 ob1;
+	private T2 ob2;
+	public void set(T1 ob1, T2 ob2) {
+		this.ob1 = ob1;
+		this.ob2 = ob2;
+	}
+	@Override
+	public String toString() {
+		// 주의 ob1.toString() 사용하기. --> 이게 더 낳다. String 타입도 맞고
+		return (ob1.toString() +"\n" + ob2.toString());
+	}
+}
+
 public class Test2 {
-	//public static void main(String[] args) {
-	public static void main() {
+	public static void main(String[] args) {
         DBox<String, Integer> box1 = new DBox<>();
         box1.set("Apple", 25);
         //System.out.println(box1);
@@ -14,36 +41,6 @@ public class Test2 {
         ddbox.set(box1, box2);
         
         System.out.println(ddbox);
-	}
-}
-class DBox<L,R>{
-	private L name;
-	private R ea;
-	void set(L name, R ea){
-		this.name = name;
-		this.ea = ea;
-	}
-	@Override
-	public String toString() {
-		//주의 : 제너릭에서는 this.name +  this.pea 리턴은 않됨 에러남.
-		//  에러내용 : The operator + is undefined for the argument type(s) L, R
-		//return (this.name +  this.pea);
-		return( name + " & " + ea);
-	}
-}
-
-class DDBox<L,R> {
-	private L l;
-	private R r;
-	void set(L l, R r) {
-		this.l = l;
-		this.r = r;
-	}
-	@Override
-	public String toString() {
-		// 주의 : 제너릭 사용시에는  return (l + r); 처럼 l + r을 사용하면 에러남.
-		//return (l + r); // 에러 : The operator + is undefined for the argument type(s) L, R
-		return (l + "\n" + r);// 참고 : int 안의 toString을 사용하면서 String + String 연산을 하게 됨
 	}
 }
 
