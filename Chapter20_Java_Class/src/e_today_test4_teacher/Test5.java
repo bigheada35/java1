@@ -1,5 +1,5 @@
-package h_today_test4_teacher;
-public class Test4 {
+package e_today_test4_teacher;
+public class Test5 {
 	public static void main(String[] args) {
 		//제네릭 메소드의 T는 메소드 호출 시점에 결정한다
 		//제네릭 메소드의 제한된 타입 매개변수 선언 으로 불가.->(1) 
