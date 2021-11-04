@@ -1,39 +1,76 @@
 package e_today_test4_teacher;
 /*
- - 클래스 Person은 이름을 저장하는 필드 구성
-- 클래스 Person은 상위 클래스 Object의 메소드 equals()를 오버라이딩하여 이름이 같으면 true를 반환하는 메소드 구현
-- 다음과 같은 소스로 클래스 Person을 점검
 
-Person p1 = new Person("홍길동");
-System.out.println(p1.equals(new Person("홍길동")));
-System.out.println(p1.equals(new Person("최명태")));
-
-결과 
-true
-flase
  */
+import java.util.Scanner;
 public class Test4 {
 	public static void main(String[] args) {
-		Person p1 = new Person("홍길동");
-		System.out.println(p1.equals(new Person("홍길동")));
-		System.out.println(p1.equals(new Person("최명태")));
+		Scanner sc;
+		UpDownGame game;
+		
+		while(true) {
+			
+			try { //주의 : 크게 묶어 주자
+				sc = new Scanner(System.in);
+				System.out.println("게임시작 1");
+				System.out.println("게임시작 2");
+				System.out.println(">>");
+				
+				int num = sc.nextInt();
+				
+				
+				if(num == 1) {
+					game = new UpDownGame();
+					game.run();
+				}else{
+					System.out.println("게임을 종료합니다.");
+					break;
+				}
+				
+				
+			} catch (Exception e) {
+				System.out.println("잘못된 입력입니다.처음부터 다시 입력하세요.");
+			}
+			
+
+		}
 	}
 }
 
-class Person{
-	String name;
-	Person(String name){
-		this.name = name;
+class UpDownGame{
+	private static int COUNT = 10;
+	private int[] arrInput;
+	private int answer;
+	public UpDownGame() {
+		arrInput = new int[COUNT];
+		answer = (int)(Math.random()*100 + 1);
 	}
-	@Override
-	public boolean equals(Object obj) {
-		if(obj instanceof Person) {  //<-- ***
-			Person person = (Person)obj;
+	public void run() {
+		try {
 			
-			if(this.name.equals(person.name)) {
-				return true;	
+			Scanner sc = new Scanner(System.in);
+			
+			for(int i=0; i<arrInput.length; i++) {
+				System.out.println("숫자를 입력해 주세요");
+				int num = sc.nextInt();
+				if(num > answer) {
+					System.out.println("Down ==>" + (COUNT-i-1) + "번 남았습니다.");
+				}else if(num < answer) {
+					System.out.println("Up ==>" + (COUNT-i-1) + "번 남았습니다.");
+					
+				}else {
+					System.out.println("일치");
+					break;
+				}
 			}
-		}	
-		return false;
+			
+		}catch(Exception e) {
+			System.out.println("잘못된 입력입니다.처음부터 다시 입력하세요.");
+			// 주의 : 재귀호출~!!
+			run();
+		}
+		
+		
+		
 	}
 }
