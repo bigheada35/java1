@@ -2,7 +2,7 @@ package t39_test_21_11_03;
 
 import java.util.Arrays;
 
-public class Test {
+public class Test39 {
 	public static void main(String[] args) {
 		AreaGetable[] area = { new Rectangle(4, 5), new Circle(4) };
 

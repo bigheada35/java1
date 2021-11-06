@@ -11,7 +11,7 @@ public class Test7 {
 		while(true) {
 
 			try {
-				System.out.println(">>");
+				System.out.print(">>");
 				Scanner sc = new Scanner(System.in);
 				String str = sc.nextLine();
 		

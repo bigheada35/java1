@@ -1,7 +1,7 @@
-package t42;
+package t42_arrays_sort;
 
 import java.util.Arrays;
-public class Test {
+public class Test42 {
 	public static void main(String[] args) {
 		   Person[] ar = new Person[3];
 		   ar[0] = new Person("Lee", 29);
