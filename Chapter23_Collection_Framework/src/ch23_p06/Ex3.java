@@ -1,11 +1,13 @@
-package ch23_p6;
+package ch23_p06;
 
 import java.util.List;
 import java.util.ArrayList;
-public class Ex {
+import java.util.LinkedList;
+public class Ex3 {
 
 	public static void main(String[] args) {
-		List<String> list = new ArrayList<>();
+		//List<String> list = new ArrayList<>();
+		List<String> list = new LinkedList<>();
 		list.add("Toy");
 		list.add("Box");
 		list.add("Robot");

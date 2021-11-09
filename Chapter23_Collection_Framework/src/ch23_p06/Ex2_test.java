@@ -1,4 +1,4 @@
-package ch23_p6;
+package ch23_p06;
 
 import java.util.List;
 import java.util.ArrayList;

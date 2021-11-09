@@ -12,6 +12,7 @@ public class Test6 {
 }
 class NickName{
 	private final int CNT = 5;
+			// 주의:  listName 이런형태가 더 좋아 보임
 	private List<String> name;
 	NickName(){
 		name = new ArrayList<String>();
@@ -22,7 +23,10 @@ class NickName{
 			for(int i=0; i<CNT; i++) {
 				System.out.print("별명을 입력하세요>>");
 				String in = sc.next();
+				
 				System.out.println(in);
+				// 주의  : 문제에서 	(단, 각 별명의 길이는 모두 다르게 입력한다.)
+				//을 언급한, 처리 내용 들어 가야 함.
 				name.add(in);
 			}
 		} catch (Exception e) {
