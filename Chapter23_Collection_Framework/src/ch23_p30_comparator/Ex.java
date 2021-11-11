@@ -22,9 +22,12 @@ class Ex {
     
 }
 class Person implements Comparable{
-	private String name;
-	private int age;
-	Person(String name, int age){
+	//private String name;
+	//private int age;
+	String name;
+	int age;
+	
+	public Person(String name, int age){
 		this.name = name;
 		this.age = age;
 	}
