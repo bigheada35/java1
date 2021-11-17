@@ -44,15 +44,15 @@ public class Test2 {
 			if(findNational.equals("그만")) {
 				break;
 			}			
-			boolean finded = false;
+			boolean isFinded = false;
 			for(Iterator<String> it = set.iterator(); it.hasNext(); ) {
 				String str = it.next();
 				if(str.equals(findNational)) {
-					finded = true;
+					isFinded = true;
 					System.out.println(findNational + "의 인구는 " + hm.get(str));
 				}
 			}
-			if(finded == false) {
+			if(isFinded == false) {
 				System.out.println(findNational + " 나라는 없습니다." );
 			}
 		}

@@ -18,4 +18,19 @@ public class Test9 {
 	}
 
 }
+class ThreadCount extends Thread{
+
+	@Override
+	public void run() {
+		try {
+			Thread.sleep(1000);	
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		System.out.println("");
+		for(int i = 10; i > 0 ; i--) {
+			System.out.println(i);
+		}
+	}
+}
 
